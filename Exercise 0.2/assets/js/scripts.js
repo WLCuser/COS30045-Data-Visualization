@@ -45,6 +45,8 @@ document.getElementById("calculate-btn").addEventListener("click", function () {
 
     // Convert watts to kilowatts, multiply by hours to get kWh used per day
     const kWhPerDay = (wattage / 1000) * hours;
+    const kWhPerMonth = kWhPerDay * 30;
+    const kWhPerYear = kWhPerDay * 365;
 
     // Convert price from cents to dollars, multiply by kWh
     const costPerDay = kWhPerDay * (priceCents / 100);
@@ -52,10 +54,12 @@ document.getElementById("calculate-btn").addEventListener("click", function () {
     const costPerYear = costPerDay * 365;
 
     resultDiv.innerHTML = `
-        Daily usage: ${kWhPerDay.toFixed(2)} kWh<br>
-        Daily cost: $${costPerDay.toFixed(2)}<br>
-        Monthly cost: $${costPerMonth.toFixed(2)}<br>
-        Yearly cost: $${costPerYear.toFixed(2)}
+        Daily energy consumption (kWh): ${kWhPerDay.toFixed(4)} kWh<br>
+        Daily cost: $${costPerDay.toFixed(4)}<br><br>
+        Monthly energy consumption (kWh): ${kWhPerMonth.toFixed(4)} kWh<br>
+        Monthly cost: $${costPerMonth.toFixed(4)}<br><br>
+        Yearly energy consumption (kWh): ${kWhPerYear.toFixed(4)} kWh<br>
+        Yearly cost: $${costPerYear.toFixed(4)}
     `;
 });
 
