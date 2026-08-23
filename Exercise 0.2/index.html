@@ -1,43 +1,89 @@
 <html>
     <head>
+        <meta charset="UTF-8">
         <title>Appliance Energy Consumption Website</title>
+        <link rel="stylesheet" href="assets/css/styles.css">
     </head>
     <body>
         <nav>
-            <img src="assets\img\PowerIcon.png">
-            <a href = "televisions.html">Televisions</a>
-            <a href = "about.html">About Us</a>
+            <a href="index.html"><img src="assets/img/PowerIcon.png"></a>
+            <div class="menu-items">
+                <a href="index.html" class="active">Homepage</a>
+                <a href="televisions.html">Televisions</a>
+                <a href="about.html">About Us</a>
+            </div>
         </nav>
-        <h1>FAQ section</h1>
 
-        <section>
-            <h2>Question 1: What is the top three highest energy guzzling appliances in aussie homes?</h2>
-            <p>Air Conditioning, Electric Water Heater and Refrigerator</p>
-        </section>
+        <div class="faq-container">
+            <h1>FAQ section</h1>
+            <div class="faq-item">
+                <button class="faq-question">
+                    Question 1: What is the top three highest energy guzzling appliances in aussie homes?
+                </button>
+                <div class="faq-answer">
+                    <div class="card-container">
+                        <div class="card">
+                            <h3>Air Conditioning</h3>
+                            <p><strong>Average energy bill:</strong> 40-50%</p>
+                            <p><strong>Energy consumption:</strong> 900-4,000 watts per hour</p>
+                        </div>
 
-        <section>
-            <h2>Question 2: Why air conditoning consumes so much?</h2>
-            <p>Cooling large spaces and constantly maintaining a set temperature demands a lot of energy, particularly when outdoor temperatures are high.</p>
-        </section>
+                        <div class="card">
+                            <h3>Electric Water Heater</h3>
+                            <p><strong>Average energy bill:</strong> 15-25%</p>
+                            <p><strong>Energy consumption:</strong> 3,000-4,800 watts per hour</p>
+                        </div>
 
-        <section>
-            <h2>Question 3: Why electric water heater consumes so much?</h2>
-            <p>Heating water requires a lot of energy, and traditional tank-style heaters must keep a large volume of water hot at all times.</p>
-        </section>
+                        <div class="card">
+                            <h3>Refrigerator</h3>
+                            <p><strong>Average energy bill:</strong> 8-15%</p>
+                            <p><strong>Energy consumption:</strong> 100-200 watts per hour</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <section>
-            <h2>Question 4: Why refrigerator consumes so much?</h2>
-            <p>Constantly maintaining a cold temperature requires significant energy, especially in warm kitchens or when the door is frequently opened.</p>
-        </section>
+            <div class="faq-item">
+                <button class="faq-question">
+                    Question 2: Why air conditioning consumes so much?
+                </button>
+                <div class="faq-answer">
+                    <p>Cooling large spaces and constantly maintaining a set temperature demands a lot of energy, particularly when outdoor temperatures are high.</p>
+                </div>
+            </div>
 
-        <section>
-            <h2>Question 5: What is the other factor that increase the energy consumption on appliances?</h2>
-            <p>It is standby power (also known as vampire power) is power drawn by an appliance when it is not in use. Standby power can account for up to 3% of your household energy use and could cost you up to $100 a year. </p>
-        </section>
+            <div class="faq-item">
+                <button class="faq-question">
+                    Question 3: Why electric water heater consumes so much?
+                </button>
+                <div class="faq-answer">
+                    <p>Heating water requires a lot of energy, and traditional tank-style heaters must keep a large volume of water hot at all times.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    Question 4: Why refrigerator consumes so much?
+                </button>
+                <div class="faq-answer">
+                    <p>Constantly maintaining a cold temperature requires significant energy, especially in warm kitchens or when the door is frequently opened.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    Question 5: What is the other factor that increases energy consumption on appliances?
+                </button>
+                <div class="faq-answer">
+                    <p>It is standby power (also known as vampire power) is power drawn by an appliance when it is not in use. Standby power can account for up to 3% of your household energy use and could cost you up to $100 a year.</p>
+                </div>
+            </div>
+        </div>
+
+        <script src="assets/js/scripts.js"></script>
+
+        <footer>
+            <p>Year created: 2026 | Created by: Wong Li Cheng | GenAI used: claude.ai</p>
+        </footer>
     </body>
-    <footer>
-        <h3>Year created: 2026</h3>
-        <h3>Created by: Wong Li Cheng</h3>
-        <h3>GenAI used: claude.ai</h3>
-    </footer>
 </html>
