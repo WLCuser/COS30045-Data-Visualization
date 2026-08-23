@@ -211,3 +211,47 @@ nav a.active {
 .calculator input.invalid {
     border-color: #d32f2f;
 }
+
+/* ---------- About ---------- */
+
+.intro {
+    max-width: 800px;
+    margin: 40px auto 0;
+    padding: 0 16px;
+    text-align: center;
+}
+
+.intro h1 {
+    font-family: Arial, sans-serif;
+    margin-bottom: 12px;
+}
+
+.intro p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.content {
+    max-width: 800px;
+    margin: 24px auto 40px;
+    padding: 24px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.content h2 {
+    font-family: Arial, sans-serif;
+    margin-bottom: 16px;
+}
+
+.content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+.content p:last-child {
+    margin-bottom: 0;
+}
