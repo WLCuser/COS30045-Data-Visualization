@@ -62,3 +62,11 @@ energy-webpage-v1
 │
 ├── index.html
 └── README.md
+
+# Generative AI Use and Reflection
+
+- The AI tool I used is Claude.ai. 
+- I used it to giving me suggestion on working with the structure styling and calculation function in js. 
+- I didn't just completely copy and paste the code given by Claude but also undergo some modification of the code structure design and the function logic.
+- I learnt more about the coding logic of html, css and js that I started to forgotten during my study and I understand the importance of having a well structured code.
+- The limitation or issues I encountered while using GenAI is they always provide me some unnecessary complex code while I was just ask about some simple question and GenAI sometime doesnt understand about my question.
