@@ -290,11 +290,11 @@ th, td {
 
 .storyboard-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-auto-rows: min-content;
     align-items: start;
     gap: 24px;
-    max-width: 90%;
+    max-width: 80%;
     margin: 0 auto 28px;
 }
 
@@ -325,21 +325,55 @@ th, td {
 
 .storyboard-card img {
     display: block;
-    width: 100%;
-    max-width: 520px;
-    margin: 0 auto 16px;
+    width: 60%;
+    margin: 0 auto 20px;
     border: 1px solid #ddd;
     border-radius: 4px;
+}
+
+/* 1st-3rd cards (Issue, Demonstration Issue, Ideas): one third of the row each */
+.storyboard-grid > .storyboard-card:nth-child(1),
+.storyboard-grid > .storyboard-card:nth-child(2),
+.storyboard-grid > .storyboard-card:nth-child(3) {
+    grid-column: span 2;
+}
+
+/* 4th card (Explanation based on data visualisation): its own full-width row,
+   content just flows normally (no multi-column layout) */
+.storyboard-grid > .storyboard-card:nth-child(4) {
+    grid-column: 1 / -1;
+}
+
+/* 5th & 6th cards (Recommendation, Conclusion): side by side below, half width each */
+.storyboard-grid > .storyboard-card:nth-child(5),
+.storyboard-grid > .storyboard-card:nth-child(6) {
+    grid-column: span 3;
 }
 
 @media (max-width: 900px) {
     .storyboard-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+    .storyboard-grid > .storyboard-card:nth-child(1),
+    .storyboard-grid > .storyboard-card:nth-child(2),
+    .storyboard-grid > .storyboard-card:nth-child(3),
+    .storyboard-grid > .storyboard-card:nth-child(4),
+    .storyboard-grid > .storyboard-card:nth-child(5),
+    .storyboard-grid > .storyboard-card:nth-child(6) {
+        grid-column: span 2;
+    }
 }
 
 @media (max-width: 600px) {
     .storyboard-grid {
         grid-template-columns: 1fr;
+    }
+    .storyboard-grid > .storyboard-card:nth-child(1),
+    .storyboard-grid > .storyboard-card:nth-child(2),
+    .storyboard-grid > .storyboard-card:nth-child(3),
+    .storyboard-grid > .storyboard-card:nth-child(4),
+    .storyboard-grid > .storyboard-card:nth-child(5),
+    .storyboard-grid > .storyboard-card:nth-child(6) {
+        grid-column: 1;
     }
 }
