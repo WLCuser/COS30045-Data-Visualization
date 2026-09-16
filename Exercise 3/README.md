@@ -41,7 +41,7 @@ The website presents these insights through visualisations and explanatory text 
 
 ### Data Source
 
-The dataset used in this project contains information about **television models and their energy consumption characteristics**, including power usage, screen size, technology type, and efficiency ratings.
+The dataset used in this project contains information about **television models and their energy consumption characteristics**, including power usage, screen size, technology type, and efficiency ratings. The name of the dataset is tv_2026_02_15.csv which is given by the lecturer in canvas.
 
 The dataset was provided as part of the course materials.
 
@@ -52,6 +52,8 @@ Before creating visualisations, the dataset was processed to ensure it was suita
 - Cleaning missing or inconsistent values
 - Selecting relevant attributes for visualisation
 - Organising the data into formats suitable for web visualisation
+
+In this assessment the main data processing include filtering the columns that are needed for the charts, replace the value of the data such as change from samsung electronics to samsung and convert the screensize in cm to inch.
 
 ### Privacy
 
@@ -88,6 +90,24 @@ Artificial Intelligence (AI) tools may have been used to assist with aspects of 
 - Assisting with documentation writing
 
 All AI-generated assistance was reviewed, modified where necessary, and integrated responsibly into the project.
+
+In this assessment AI tool that being used is claude.ai and it main purpose of it is to generate code for the expression node in Knime use for categorized the screensize based on large, medium and small. Other than that claude.ai is also used for the javascript code for the calculator function that previously done in Exercise 0.2 which currently used in Exercise 3 and it is used for improving the website structure using external css while improving the html structure.
+
+Example of the generated code for Knime:
+
+if(
+
+$["screensize_inch (Rounded)"] < 44,
+
+"Small",
+
+$["screensize_inch (Rounded)"] <= 65,
+
+"Medium",
+
+"Large"
+
+)
 
 ---
 
