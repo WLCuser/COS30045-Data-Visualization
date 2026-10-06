@@ -6,11 +6,15 @@
     box-sizing: border-box;
 }
 
-h1, h2, h3, p{
+h1,
+h2,
+h3,
+p {
     font-family: Arial, sans-serif;
 }
 
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
 }
@@ -79,7 +83,7 @@ nav a.active {
 
 /* ---------- FAQ Accordion ---------- */
 
-.faq-container{
+.faq-container {
     max-width: 80%;
     margin: auto;
 }
@@ -258,7 +262,7 @@ nav a.active {
 
 /* ---------- Television ---------- */
 
-.television{
+.television {
     margin: 0 auto;
     text-align: center;
     padding-top: 50px;
@@ -270,10 +274,47 @@ table {
     width: 700px;
     margin: 0 auto;
 }
-  
-th, td {
+
+th,
+td {
     border: 1px solid #333;
     padding: 8px;
     text-align: left;
     font-family: Arial, sans-serif;
+}
+
+#filters {
+    margin: 10px 0px 5px;
+}
+
+.filter {
+    min-width: 80px;
+    margin: 0 5px;
+    padding: 8px 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1;
+    color: #ffffff;
+    /* White text for contrast */
+    font-weight: 500;
+    background-color: #d2691e;
+    /* Warm orange */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.filter:hover,
+.filter.active {
+    background-color: #ffb347;
+    /* Lighter orange for hover and active state */
+    transition-timing-function: ease-out;
+}
+
+.filter.active {
+    cursor: default;
+    background-color: #ffcc80;
+    /* Soft yellow for active state */
+
 }
