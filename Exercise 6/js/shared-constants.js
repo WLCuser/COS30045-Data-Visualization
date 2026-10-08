@@ -5,6 +5,13 @@ const height = 400; //Total height of the chart
 const innerWidth = width - margin.left - margin.right;
 const innerHeight = height - margin.top - margin.bottom;
 
+//set up inner chart variable for scatterplot
+let innerCharts
+
+//Set up tooltip dimensions
+const tooltipWidth = 65;
+const tooltipHeight = 32;
+
 //Set up colors accessible globally
 const barColor = "#606464"
 const bodyBackgroundColor = "#fffaf0";
@@ -12,6 +19,11 @@ const bodyBackgroundColor = "#fffaf0";
 //Set up the scales
 const xScale = d3.scaleLinear();
 const yScale = d3.scaleLinear();
+
+//Set up the scatterplot scales and color scale
+const xScaleS = d3.scaleLinear();
+const yScaleS = d3.scaleLinear();
+const colorScale = d3.scaleOrdinal();
 
 //Create a bin generator using d3.bin
 const binGenerator = d3.bin()
