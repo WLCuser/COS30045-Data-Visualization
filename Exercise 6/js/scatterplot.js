@@ -55,7 +55,7 @@ const drawScatterplot = (data) => {
     //Add axis label
     innerChartS
         .append("text")
-        .text("Energy Consumption")
+        .text("Labeled Energy Consumption (kWh/year)")
         .attr("x", -margin.left)
         .attr("y", -10)
         .attr("text-anchor", "start");
@@ -63,7 +63,7 @@ const drawScatterplot = (data) => {
     //Add axis label
     innerChartS
         .append("text")
-        .text("Star")
+        .text("Star Rating")
         .attr("x", innerWidth)
         .attr("y", innerHeight + margin.bottom - 10)
         .attr("text-anchor", "end");
