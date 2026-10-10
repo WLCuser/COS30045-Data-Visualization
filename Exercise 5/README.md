@@ -51,3 +51,18 @@ Ensure that:
 - All Exercise 5 files are inside the **Exercise 5 folder**
 - Your code is pushed to GitHub
 - Your repository link is submitted through the submission system.
+
+# GenAI Declaration
+The completion of this exercise is supported with the help of claude.ai
+
+Prompt:
+1. Donut chart possition is misalign
+2. Label on the donut chart didn't display
+
+Final Output:
+1. Replace .attr("transform",`translate(${width}, ${height})`) with .attr("transform", `translate(${width / 2}, ${height / 2})`)
+2. Suggest to add const arcs = pie(data); and .data(arcs) for both paths and labels
+
+Modification Done:
+1. -
+2. Directly use .data(pie(data)) without variable
