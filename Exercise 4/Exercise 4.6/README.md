@@ -1,4 +1,4 @@
-# Exercise 4.6 (Include from Exercise 4.2 to Exercise 4.7)
+# Exercise 4.6 (Include from Exercise 4.3 to Exercise 4.7)
 # GenAI Declaration
 This exercise is done with the help of claude.ai
 
