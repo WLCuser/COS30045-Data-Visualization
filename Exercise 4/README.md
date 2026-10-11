@@ -21,17 +21,22 @@ The exercises in this folder guide you through the fundamental concepts needed t
 - **Exercise 4.6 – Scaling charts**  
   Use D3 scales to map data values to positions in a chart.
 
-# GenAI Declaration from Exercise 4.2 to Exercise 4.7
+# GenAI Declaration from Exercise 4.1 to Exercise 4.7
 This exercise is done with the help of claude.ai
 
 Prompt:
-1. Can't load the data (Exercise 4.4)
+1. List of prompt (Exercise 4.1)
+- Create a svg image of this in D3.js with separate js and html
+- Incorrect css style
+- Way to insert the code into table content
+
+2. Can't load the data (Exercise 4.4)
 d3.csv("Exercise 4\Exercise 4.4\data\tvBrandCount.csv", d => {
   console.log(d); 
 }
 );
 
-2. Why bar chart didn't display (Exercise 4.5)
+3. Why bar chart didn't display (Exercise 4.5)
 <html>
     <head>
         <title>csv data</title>
@@ -45,13 +50,21 @@ d3.csv("Exercise 4\Exercise 4.4\data\tvBrandCount.csv", d => {
 </html>
 
 Final Output:
-1. 
+1. The updated index.html, styles.css and main.js
+
+2. 
 d3.csv("data/tvBrandCount.csv", d => {
   console.log(d);
 });
 
-2. Move <svg> above of <script>
+3. Move <svg> above of <script>
 
 Modification Made:
-1. -
-2. edit the <svg> from Exercise 4.5 index.html to <div>
+1. List of modification made for Exercise 4.1
+- Edit the id used by d3 for easy reference by styles.css and main.js
+- Replace the <pre> suggested used in the content of table with <br> to avoid unnecessary left gap
+- Insert the code of website did on Exercise 0.2 in this exercise
+- Add another d3 which is for modified svg image from the previous one
+- Ignore the css style that was unnecessary 
+2. -
+3. edit the <svg> from Exercise 4.5 index.html to <div>
